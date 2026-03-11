@@ -1,0 +1,27 @@
+/* Footer.css */
+.footer {
+  background: #111;
+  background-image: radial-gradient(circle, #333 1px, transparent 1px);
+  background-size: 12px 12px;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 40px 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 80px;
+}
+
+.footer-section h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.footer-section p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  margin: 0 0 8px;
+}
