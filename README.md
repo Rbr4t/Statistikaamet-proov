@@ -1,73 +1,125 @@
-# React + TypeScript + Vite
+# Statistikaamet Homework - ENGLISH
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive quiz about Estonian statistics, created as a homework assignment for Statistics Estonia (Statistikaamet) for 2026 internship.
 
-Currently, two official plugins are available:
+🔗 **Live demo:** [rbr4t.github.io/Statistikaamet-proovit-](https://rbr4t.github.io/Statistikaamet-proovit-/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Playwright](https://playwright.dev/) — automated tests
+- GitHub Pages — hosting
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Multiple choice questions about Estonian statistics
+- Randomized answer order on every playthrough
+- Immediate feedback — correct or incorrect answer
+- Final score screen with a full review of all answers
+- Fully responsive — works on both mobile and desktop
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Running Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/Rbr4t/Statistikaamet-proov.git
+cd Statistikaamet-proovit-
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open your browser at `http://localhost:5173`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Running Tests
+
+```bash
+npx playwright test
 ```
+
+---
+
+## Screenshots
+![Desktop view](image-1.png)
+![Mobile view](image-2.png)
+
+---
+
+## Author
+
+**Robert Koor** — University of Tartu
+
+# Statistikaamet Kodutöö - EESTI
+
+Interaktiivne viktoriin Eesti statistika kohta, loodud Statistikaameti kodutöö raames 2026 praktika raames.
+
+🔗 **Live demo:** [rbr4t.github.io/Statistikaamet-proov](https://rbr4t.github.io/Statistikaamet-proov/)
+
+---
+
+## Tehnoloogiad
+
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Playwright](https://playwright.dev/) — automaattestid
+- GitHub Pages — hostimine
+
+---
+
+## Funktsionaalsus
+
+- Mitmevalikulised küsimused Eesti statistika kohta
+- Juhuslik vastuste järjekord igal mängimisel
+- Kohene tagasiside — õige või vale vastus
+- Lõpptulemus koos ülevaatega kõigist vastustest
+- Täielikult responsiivne — töötab nii telefonis kui arvutis
+
+---
+
+## Käivitamine lokaalselt
+
+```bash
+# Klooni repo
+git clone https://github.com/Rbr4t/Statistikaamet-proov.git
+cd Statistikaamet-proov
+
+# Paigalda dependencies
+npm install
+
+# Käivita arendusserver
+npm run dev
+```
+
+Ava brauser aadressil `http://localhost:5173`
+
+---
+
+## Testide käivitamine
+
+```bash
+npx playwright test
+```
+
+---
+
+## Screenshots
+![Desktop view](image-1.png)
+![Mobile view](image-2.png)
+
+---
+
+## Autor
+
+**Robert Koor** — Tartu Ülikool
