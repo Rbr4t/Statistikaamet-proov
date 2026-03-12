@@ -2,7 +2,7 @@
 
 An interactive quiz about Estonian statistics, created as a homework assignment for Statistics Estonia (Statistikaamet) for 2026 internship.
 
-🔗 **Live demo:** [rbr4t.github.io/Statistikaamet-proovit-](https://rbr4t.github.io/Statistikaamet-proovit-/)
+🔗 **Live demo:** [rbr4t.github.io/Statistikaamet-proovi](https://rbr4t.github.io/Statistikaamet-proov/)
 
 ---
 
