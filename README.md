@@ -12,6 +12,7 @@ An interactive quiz about Estonian statistics, created as a homework assignment 
 - [Vite](https://vitejs.dev/)
 - [Playwright](https://playwright.dev/) — automated tests
 - GitHub Pages — hosting
+- [Claude.ai](https://claude.ai/new) - coding agent
 
 ---
 
@@ -75,6 +76,7 @@ Interaktiivne viktoriin Eesti statistika kohta, loodud Statistikaameti kodutöö
 - [Vite](https://vitejs.dev/)
 - [Playwright](https://playwright.dev/) — automaattestid
 - GitHub Pages — hostimine
+- [Claude.ai](https://claude.ai/new) - AI koodiagent
 
 ---
 
@@ -114,7 +116,7 @@ npx playwright test
 
 ---
 
-## Screenshots
+## Kuvatõmmised rakendusest
 ![Desktop view](image-1.png)
 ![Mobile view](image-2.png)
 
