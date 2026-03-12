@@ -1,14 +1,12 @@
 import Content from "./components/Main/Content"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import Logo from "./components/Logo"
-
+import Footer from "./components/Footer/Footer"
+import Header from "./components/Header/Header"
+import './App.css'
 
 function App() {
 
   return (
     <>
-      {/* <Logo /> */}
       <Header />
       <Content />
       <Footer />
