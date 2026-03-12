@@ -17,9 +17,21 @@ const questions = [
   },
   {
     id: 2,
-    text: "Mis on Eesti pealinn 2?",
-    options: ["Tallinn", "Tartu", "Pärnu", "Narva"],
-    correct: "Tartu"
+    text: "Milline on Eesti meeste oodatav eluiga?",
+    options: ["75.1", "80.1", "66.5", "92.3"],
+    correct: "75.1"
+  },
+  {
+    id: 3,
+    text: "Kui palju lapsi elab Eestis 2024.aasta seisuga?",
+    options: ["221 501 ", "267 879 ", "317 422", "160 172 "],
+    correct: "267 879 "
+  },
+  {
+    id: 4,
+    text: "Millises Eesti piirkonnas on madalaim asustustihedus?",
+    options: ["Tapa vald", "Setomaa vald", "Vormsi vald", "Kambja vald"],
+    correct: "Vormsi vald"
   },
 ]
 
@@ -66,7 +78,7 @@ function Content() {
           <>
             <div className="results-header">
               <span className="question-tag">TULEMUSED</span>
-              <h2>Said õigesti {score} / {questions.length}</h2>
+              <h2>Said tulemuseks {score} / {questions.length} - {score > 0.5*questions.length ? 'Tubli, sa tunned statistikat!' : 'Harjutamine teeb meistriks.'}</h2>
             </div>
             <table className="results-table">
               <thead>

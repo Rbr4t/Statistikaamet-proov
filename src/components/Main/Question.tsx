@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import './Question.css'
 
 type Props = {
@@ -18,6 +18,11 @@ function Question({ question, current, total, onNext, isLast }: Props) {
   const [selected, setSelected] = useState<string | null>(null)
   const [confirmed, setConfirmed] = useState<boolean>(false)
 
+  const shuffledOptions = useMemo(() => 
+    [...question.options].sort(() => Math.random() - 0.5),
+    [current]
+  )
+
   function handleNext() {
     if (!selected) return
     onNext({ question: question.text, selected, correct: question.correct })
@@ -31,7 +36,7 @@ function Question({ question, current, total, onNext, isLast }: Props) {
       <h3>{question.text}</h3>
 
       <div className="question-options">
-        {question.options.map(opt => (
+        {shuffledOptions.map(opt => (
           <button
             key={opt}
             className={`option
