@@ -5,12 +5,12 @@ function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-section">
-                    <h3>Kontaktid</h3>
+                    <h2>Kontaktid</h2>
                     <p>Robert Koor</p>
                     <p>Tartu Ülikool</p>
                 </div>
                 <div className="footer-section">
-                    <h3>Statistikaamet kodutöö</h3>
+                    <h2>Statistikaamet kodutöö</h2>
                     <a href="https://github.com/rbr4t" target="_blank" rel="noopener noreferrer">
                         <p>Github</p>
                     </a>
@@ -20,6 +20,7 @@ function Footer() {
                     </a>
                 </div>
             </div>
+
         </footer>
     )
 }

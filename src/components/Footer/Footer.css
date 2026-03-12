@@ -1,20 +1,37 @@
 .footer {
-  background: #111;
-  background-image: radial-gradient(circle, #333 1px, transparent 1px);
-  background-size: 12px 12px;
-  color: white;
+  background: #000;
+  color: #fff;
   font-family: Arial, sans-serif;
-  padding: 40px 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer > span {
+  display: flex;;
+  height: 1rem;
+  width: 100%;
+  background: #000;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-evenly;
   gap: 80px;
+  background-image: radial-gradient(circle, #b9b9b9 1px, transparent 1px);
+  background-size: 12px 12px;
+  padding: 1.5rem;
 }
 
-.footer-section h3 {
-  font-size: 15px;
+.footer-section {
+  background-color: #000;
+  padding: 16px;
+}
+
+.footer-section h2 {
+  font-size: 20px;
   font-weight: 700;
   margin: 0 0 16px;
 }
